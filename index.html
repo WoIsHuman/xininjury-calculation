@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伤害计算</title>
+    <script>function multiplication() {
+        var a = document.getElementById('input1').value;
+        var b = document.getElementById('input2').value;
+        var c = document.getElementById('input3').value;
+        var d = document.getElementById('input4').value;
+        var e = document.getElementById('input5').value;
+        var f = document.getElementById('input6').value;
+        var g = a*d*f+b*c*d*e*f;
+        var settings = document.getElementById('input7');
+        if ((a=="" || isNaN(a)) || (b=="" || isNaN(b))) {
+            settings.value = null;
+            alert("输入数据有误，请重新输入！")
+        }
+        else {
+            settings.value = g;
+        }
+    }</script>
+</head>
+<body background="1.jpg">
+    <h2 align="center">文游伤害计算</h2>
+    <p align="center"><s>相当简陋的小网页，希望你用的愉快</s></p>
+    <p align="center"><span>by北岸～</span></p>
+    <p style="text-align: center"><a href="https://jq.qq.com/?_wv=1027&k=Vs8Q3YXp" target="_blank">加Q群链接</a></p>
+    <ul>
+        <li>大概就是这样了</li>
+        <li>有问题联系我</li>
+        <li>QQ2663652847</li></span>
+    </ul>
+      <p style="text-align: center"><input id="input1" placeholder="请输入A基础伤害"> </p>
+      <p style="text-align: center"><input id="input2" placeholder="请输入B营数"> </p>
+      <p style="text-align: center"><input id="input3" placeholder="请输入C单个营的伤害"> </p>
+      <p style="text-align: center"><input id="input4" placeholder="请输入D地形影响"> </p>
+      <p style="text-align: center"><input id="input5" placeholder="请输入E伤害增减"> </p>
+      <p style="text-align: center"><input id="input6" placeholder="请输入F士气影响"> </p>
+      <br /><p style="text-align: center"><button id="button2" onclick="multiplication()">=</button> </p>
+      <br /><p style="text-align: center"><input id="input7" placeholder="结果"></p>
